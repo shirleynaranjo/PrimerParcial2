@@ -35,18 +35,26 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Cliente<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a id="rc" href="#">Registro Cliente</a></li>
+                            <li><a id="lc" href="#">Lista Clientes</a></li>
 						</ul>
+                       
 					</li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mensajeros<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a id="rm" href="#">Registro Mensajero</a></li>
+                            <li><a id="lm" href="#">Lista mensajeros</a></li>
                         </ul>
+                       
                     </li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Envios<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a id="re" href="#">Registro de Envios</a></li>
+                            <li><a id="le" href="#">Lista de Envios</a></li>
                         </ul>
-                    </li>
+                                                               
+                    
+                    </li >
+                    
 					<li><a id="login" href="#">Login</a></li>
 					
 				</ul>
@@ -61,7 +69,7 @@
             <div class="col-md-4 col-xs-12">
             <div class="container" id="cont">
             <div class="row">
-            <div class="col-md-3 col-xs-9">
+            <div class="col-md-3 col-xs-10">
                 <div class="thumbnail">
                     <img src="https://quesosaguiñiga.com/img/cms/Buscar%20tiendas.png">
                     <div class="caption">
@@ -72,7 +80,7 @@
             </div>
                 
             <div class="row">
-            <div class="col-md-3 col-xs-9">
+            <div class="col-md-3 col-xs-10">
                 <div class="thumbnail">
                     <img src="https://i1.wp.com/www.arkiplus.com/wp-content/uploads/2015/03/ciudades.jpg">
                     <div class="caption">
@@ -146,6 +154,15 @@
 		});
         $("#re").click(function (evento) {
 			$("#contenedor").load('registroenvio.html');
+		});
+         $("#lm").click(function (evento) {
+			$("#contenedor").load('listamen.html');
+		});
+         $("#lc").click(function (evento) {
+			$("#contenedor").load('listacl.html');
+		});
+         $("#le").click(function (evento) {
+			$("#contenedor").load('listaenvio.html');
 		});
         
       		
